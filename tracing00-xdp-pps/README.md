@@ -1,8 +1,8 @@
-# Install packages
+# Install packages.
 ```
 $ apt install clang llvm libelf-dev libpcap-dev build-essential automake git
-``
-# Compile xdp tutorial
+```
+# Compile xdp tutorial,
 ```
 $ git clone https://github.com/danieldin95/xdp-tutorial.git
 $ git checkout just-pps
@@ -10,7 +10,7 @@ $ ./configre
 $ make 
 ```
 
-# Load xdp-pps program
+# Load xdp-pps program.
 ```
 $ cd tracing00-xdp-pass
 $ ./xdp_sample_pkts_user -d enp1s0
@@ -21,7 +21,7 @@ pkt len: 98    bytes. hdr: fa 16 3e a4 6f ad fa 16 3e d9 75 65 08 00 45 00 00 54
 pkt len: 98    bytes. hdr: fa 16 3e a4 6f ad fa 16 3e d9 75 65 08 00 45 00 00 54 72 2c 00 00 40 01 f3 32 0a 0a 00 89 0a 0a 00 ae
 ```
 
-# Wath pps 
+# Watch packets per seconds.
 
 ```
 $ sar -n DEV 2 3600
